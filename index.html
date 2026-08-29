@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abi Wood Works | Custom Carpentry &amp; Furniture in Vellalore</title>
+<meta name="description" content="Abi Wood Works offers custom wooden doors, furniture, wardrobes, kitchen cabinets and furniture repair in Vellalore, Tamil Nadu. With 25+ years of carpentry experience, Muthu Kumar creates practical and durable woodwork.">
+<meta name="keywords" content="Abi Wood Works, Muthu Kumar, Carpenter in Vellalore, Carpentry, Custom furniture, Wooden doors, Teak wood, Plywood, Wardrobes, Kitchen cabinets, Furniture repair, Vellalore, Tamil Nadu">
+<meta property="og:title" content="Abi Wood Works | Custom Carpentry & Furniture in Vellalore">
+<meta property="og:description" content="25+ years of carpentry experience. Custom wooden doors, furniture, wardrobes and kitchen cabinets in Vellalore, Tamil Nadu.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#F5EFE3">
+<link rel="icon" href="assets/mark-only.png">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Abi Wood Works",
+  "founder": { "@type": "Person", "name": "Muthu Kumar" },
+  "image": "assets/logo.png",
+  "telephone": ["+919865707774", "+919865707776"],
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Vellalore",
+    "addressRegion": "Tamil Nadu",
+    "addressCountry": "IN"
+  },
+  "areaServed": "Vellalore, Tamil Nadu",
+  "description": "Custom wooden doors, furniture, wardrobes, kitchen cabinets and furniture repair with 25+ years of carpentry experience.",
+  "priceRange": "$$"
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+Tamil:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+/* ============ TOKENS ============ */
+:root{
+  --ink:#1B1712;
+  --ink-soft:#3A342B;
+  --paper:#F6F0E4;
+  --paper-dim:#EEE5D3;
+  --paper-deep:#E7DBC3;
+  --wood:#6E4429;
+  --wood-deep:#4A2E1B;
+  --bronze:#A9793F;
+  --bronze-light:#C79A5F;
+  --line: rgba(27,23,18,0.14);
+  --line-soft: rgba(27,23,18,0.08);
+  --on-dark: #F6F0E4;
+
+  --serif: 'Fraunces', serif;
+  --sans: 'Manrope', sans-serif;
+  --tamil: 'Noto Sans Tamil', 'Manrope', sans-serif;
+
+  --ease: cubic-bezier(.22,.68,.32,1);
+  --nav-h: 84px;
+}
+
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto;}
+  *{animation-duration:0.001ms !important; animation-iteration-count:1 !important; transition-duration:0.001ms !important; scroll-behavior:auto !important;}
+}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:var(--sans);
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+[lang-ta]{ font-family: var(--tamil); }
+html[data-lang="ta"] body{ font-family: var(--tamil); }
+
+img{max-width:100%; display:block;}
+a{color:inherit; text-decoration:none;}
+button{font-family:inherit; cursor:pointer;}
+.container{
+  width:100%;
+  max-width:1320px;
+  margin:0 auto;
+  padding:0 32px;
+}
+@media (max-width:768px){ .container{padding:0 20px;} }
+
+.eyebrow{
+  font-family:var(--sans);
+  font-size:12px;
+  font-weight:700;
+  letter-spacing:.22em;
+  text-transform:uppercase;
+  color:var(--bronze);
+}
+.eyebrow.on-dark{ color:var(--bronze-light); }
+
+h1,h2,h3{
+  font-family:var(--serif);
+  font-weight:500;
+  letter-spacing:-0.01em;
+  line-height:1.03;
+  margin:0;
+  color:var(--ink);
+}
+html[data-lang="ta"] h1, html[data-lang="ta"] h2, html[data-lang="ta"] h3{
+  font-family: var(--tamil);
+  font-weight:700;
+  letter-spacing:0;
+  line-height:1.25;
+}
+
+p{ line-height:1.7; color:var(--ink-soft); margin:0; }
+
+.btn{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  padding:16px 30px;
+  font-size:13px;
+  font-weight:700;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  border-radius:2px;
+  border:1px solid transparent;
+  transition:transform .4s var(--ease), background .35s ease, color .35s ease, border-color .35s ease;
+  white-space:nowrap;
+}
+.btn:hover{ transform:translateY(-2px); }
+.btn-primary{ background:var(--ink); color:var(--paper); }
+.btn-primary:hover{ background:var(--wood-deep); }
+.btn-outline{ background:transparent; color:var(--ink); border-color:var(--ink); }
+.btn-outline:hover{ background:var(--ink); color:var(--paper); }
+.btn-outline.on-dark{ color:var(--on-dark); border-color:rgba(246,240,228,.5); }
+.btn-outline.on-dark:hover{ background:var(--on-dark); color:var(--ink); }
+.btn svg{ width:16px; height:16px; flex:none; }
+
+/* seam / joinery divider — the signature motif: a short tick that "assembles" like a door joint */
+.seam{
+  position:relative;
+  width:1px;
+  height:64px;
+  background:var(--line);
+  margin:0 auto;
+  overflow:hidden;
+}
+.seam::after{
+  content:"";
+  position:absolute;
+  left:0; top:-100%;
+  width:100%; height:100%;
+  background:var(--bronze);
+  transition:top 1.1s var(--ease);
+}
+.seam.in::after{ top:0%; }
+.seam-tick{
+  width:26px; height:1px; background:var(--line); margin:22px auto;
+}
+
+section{ position:relative; }
+
+/* ============ REVEAL ============ */
+.reveal{ opacity:0; transform:translateY(28px); transition:opacity .9s var(--ease), transform .9s var(--ease); }
+.reveal.in{ opacity:1; transform:translateY(0); }
+.reveal-delay-1{ transition-delay:.08s; }
+.reveal-delay-2{ transition-delay:.16s; }
+.reveal-delay-3{ transition-delay:.24s; }
+
+/* ============ NAV ============ */
+.nav{
+  position:fixed; top:0; left:0; right:0; z-index:200;
+  height:var(--nav-h);
+  display:flex; align-items:center;
+  transition:background .45s ease, box-shadow .45s ease, height .45s ease, border-color .45s ease;
+  border-bottom:1px solid transparent;
+}
+.nav.solid{
+  background:rgba(246,240,228,0.88);
+  backdrop-filter:blur(14px);
+  -webkit-backdrop-filter:blur(14px);
+  border-color:var(--line-soft);
+  height:72px;
+}
+.nav-inner{
+  width:100%; max-width:1320px; margin:0 auto; padding:0 32px;
+  display:flex; align-items:center; justify-content:space-between;
+}
+@media (max-width:768px){ .nav-inner{padding:0 20px;} }
+.brand{ display:flex; align-items:center; gap:12px; }
+.brand img{ height:38px; width:auto; transition:height .45s ease; }
+.nav.solid .brand img{ height:32px; }
+.brand-word{
+  font-family:var(--serif); font-size:17px; letter-spacing:.02em; font-weight:500;
+  display:flex; flex-direction:column; line-height:1.05;
+}
+.brand-word small{ font-family:var(--sans); font-size:9px; letter-spacing:.2em; color:var(--bronze); font-weight:700; margin-top:2px;}
+@media (max-width:560px){ .brand-word{ display:none; } }
+
+.nav-links{ display:flex; align-items:center; gap:40px; list-style:none; margin:0; padding:0; }
+.nav-links a{
+  font-size:12.5px; font-weight:700; letter-spacing:.14em; text-transform:uppercase;
+  position:relative; padding-bottom:4px;
+}
+.nav-links a::after{
+  content:""; position:absolute; left:0; bottom:0; width:0; height:1px; background:var(--bronze);
+  transition:width .35s var(--ease);
+}
+.nav-links a:hover::after{ width:100%; }
+@media (max-width:980px){ .nav-links{ display:none; } }
+
+.nav-right{ display:flex; align-items:center; gap:22px; }
+.lang-toggle{
+  display:flex; align-items:center; gap:6px; font-size:12px; font-weight:800; letter-spacing:.08em; background:none; border:none; color:var(--ink);
+}
+.lang-toggle span{ padding:2px 4px; opacity:.4; transition:opacity .3s ease; }
+.lang-toggle span.active{ opacity:1; border-bottom:1px solid var(--bronze); }
+.nav-whatsapp{
+  display:flex; align-items:center; gap:8px; padding:11px 20px; background:var(--ink); color:var(--paper);
+  font-size:11.5px; font-weight:700; letter-spacing:.12em; text-transform:uppercase; border-radius:2px;
+  transition:background .3s ease, transform .3s ease;
+}
+.nav-whatsapp:hover{ background:var(--wood-deep); transform:translateY(-1px); }
+.nav-whatsapp svg{ width:15px; height:15px; }
+@media (max-width:640px){ .nav-whatsapp span{ display:none; } .nav-whatsapp{ padding:11px; border-radius:50%; } }
+
+.menu-btn{ display:none; background:none; border:none; flex-direction:column; gap:5px; padding:8px; }
+.menu-btn span{ width:22px; height:1.5px; background:var(--ink); display:block; }
+@media (max-width:980px){ .menu-btn{ display:flex; } }
+
+.mobile-menu{
+  position:fixed; inset:0; z-index:250; background:var(--paper);
+  display:flex; flex-direction:column; justify-content:center; padding:40px;
+  transform:translateY(-100%); transition:transform .5s var(--ease);
+}
+.mobile-menu.open{ transform:translateY(0); }
+.mobile-menu ul{ list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:26px; }
+.mobile-menu a{ font-family:var(--serif); font-size:34px; font-weight:500; }
+.mobile-menu-close{ position:absolute; top:26px; right:24px; background:none; border:none; font-size:28px; color:var(--ink); }
+.mobile-menu-foot{ position:absolute; bottom:36px; left:40px; right:40px; display:flex; justify-content:space-between; font-size:12px; letter-spacing:.12em; text-transform:uppercase; color:var(--ink-soft); }
+
+/* ============ HERO ============ */
+.hero{
+  min-height:100svh;
+  display:flex; align-items:stretch;
+  background:var(--paper);
+  padding-top:var(--nav-h);
+}
+.hero-grid{
+  display:grid; grid-template-columns:1fr 1fr; align-items:center; gap:40px;
+  width:100%; max-width:1440px; margin:0 auto; padding:60px 48px 60px;
+}
+.hero-copy{ max-width:520px; }
+.hero-copy .eyebrow{ margin-bottom:26px; display:block; }
+.hero-copy h1{
+  font-size:clamp(46px, 5.4vw, 78px);
+  margin-bottom:26px;
+}
+.hero-copy p.lead{
+  font-size:18px; max-width:440px; margin-bottom:8px;
+}
+.hero-exp{
+  margin:26px 0 38px; font-size:11.5px; font-weight:800; letter-spacing:.2em; text-transform:uppercase; color:var(--wood);
+  display:flex; align-items:center; gap:12px;
+}
+.hero-exp::before{ content:""; width:32px; height:1px; background:var(--bronze); }
+.hero-actions{ display:flex; gap:16px; flex-wrap:wrap; }
+
+.hero-video-wrap{
+  position:relative; height:78vh; max-height:820px; border-radius:2px; overflow:hidden;
+  background:var(--ink);
+}
+.hero-video-wrap::before{
+  content:""; position:absolute; inset:0; z-index:2; pointer-events:none;
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,.06);
+}
+.hero-video-wrap video, .hero-video-wrap .poster{
+  position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center;
+}
+.hero-video-caption{
+  position:absolute; left:24px; bottom:22px; z-index:3; color:var(--on-dark);
+  font-size:11px; letter-spacing:.16em; text-transform:uppercase; font-weight:700; opacity:.85;
+  display:flex; align-items:center; gap:10px;
+}
+.hero-video-caption::before{ content:""; width:6px; height:6px; border-radius:50%; background:var(--bronze-light); }
+
+@media (max-width:980px){
+  .hero{ padding-top:0; min-height:auto; }
+  .hero-grid{ grid-template-columns:1fr; padding:0; gap:0; }
+  .hero-copy{ order:2; max-width:none; padding:36px 22px 46px; text-align:left; }
+  .hero-video-order{ order:1; }
+  .hero-video-wrap{ height:82vh; max-height:none; border-radius:0; margin-top:var(--nav-h); }
+  .hero-copy h1{ font-size:clamp(38px, 10vw, 52px); }
+  .hero-copy p.lead{ max-width:none; }
+  .hero-actions{ flex-direction:column; }
+  .hero-actions .btn{ justify-content:center; width:100%; }
+  .hero-copy .eyebrow{ margin-bottom:14px; }
+}
+
+/* ============ SECTION 2: IDEA ============ */
+.idea{ padding:170px 0 150px; text-align:center; }
+.idea .container{ max-width:900px; }
+.idea h2{
+  font-size:clamp(34px, 5vw, 58px);
+  margin-bottom:34px;
+}
+.idea .lead-quote{
+  font-family:var(--serif); font-style:italic; font-weight:400; font-size:clamp(20px,2.4vw,26px);
+  color:var(--wood); line-height:1.5; max-width:640px; margin:0 auto;
+}
+html[data-lang="ta"] .idea .lead-quote{ font-family:var(--tamil); font-style:normal; }
+
+/* ============ SECTION 3: CRAFTSMAN ============ */
+.craftsman{ padding:0 0 170px; }
+.craftsman-grid{ display:grid; grid-template-columns:0.85fr 1.15fr; gap:80px; align-items:center; }
+.craftsman-portrait{
+  position:relative; aspect-ratio:4/5; background:linear-gradient(150deg, var(--paper-deep), var(--paper-dim));
+  border:1px solid var(--line); display:flex; align-items:center; justify-content:center; overflow:hidden;
+}
+.craftsman-portrait .mark{ width:34%; opacity:.5; filter:grayscale(1) brightness(0.4); }
+.craftsman-portrait .cap{
+  position:absolute; bottom:0; left:0; right:0; padding:18px 22px; background:rgba(27,23,18,0.85); color:var(--on-dark);
+  font-size:11px; letter-spacing:.1em; text-transform:uppercase; font-weight:600;
+}
+.craftsman-copy .eyebrow{ margin-bottom:20px; }
+.craftsman-copy h2{ font-size:clamp(36px,4.6vw,54px); margin-bottom:6px; }
+.craftsman-copy .role{ font-size:14px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-soft); margin-bottom:28px; display:block; }
+.craftsman-copy p{ font-size:17px; max-width:520px; margin-bottom:28px; }
+.craftsman-stats{ display:flex; gap:48px; margin-top:38px; }
+.craftsman-stats div strong{ display:block; font-family:var(--serif); font-size:38px; color:var(--wood); }
+.craftsman-stats div span{ font-size:11.5px; letter-spacing:.12em; text-transform:uppercase; color:var(--ink-soft); }
+@media (max-width:900px){
+  .craftsman-grid{ grid-template-columns:1fr; gap:44px; }
+  .craftsman{ padding-bottom:120px; }
+}
+
+/* ============ SECTION 4: SERVICES ============ */
+.services{ padding:0 0 170px; }
+.services-head{ display:flex; justify-content:space-between; align-items:flex-end; margin-bottom:64px; gap:24px; flex-wrap:wrap; }
+.services-head h2{ font-size:clamp(36px,4.6vw,56px); }
+.services-head p{ max-width:340px; font-size:15px; }
+.services-grid{ display:grid; grid-template-columns:repeat(3, 1fr); border-top:1px solid var(--line); border-left:1px solid var(--line); }
+.service-card{
+  border-right:1px solid var(--line); border-bottom:1px solid var(--line);
+  padding:44px 36px 40px; min-height:250px; display:flex; flex-direction:column; justify-content:space-between;
+  transition:background .4s ease;
+  position:relative; overflow:hidden;
+}
+.service-card::before{
+  content:""; position:absolute; left:0; top:0; bottom:0; width:3px; background:var(--bronze);
+  transform:scaleY(0); transform-origin:bottom; transition:transform .45s var(--ease);
+}
+.service-card:hover::before{ transform:scaleY(1); }
+.service-card:hover{ background:var(--paper-dim); }
+.service-num{ font-family:var(--serif); font-size:15px; color:var(--bronze); font-weight:500; }
+.service-card h3{ font-size:22px; margin:26px 0 14px; }
+.service-card p{ font-size:14.5px; }
+@media (max-width:900px){ .services-grid{ grid-template-columns:repeat(2,1fr); } }
+@media (max-width:600px){ .services-grid{ grid-template-columns:1fr; } .services-head{ margin-bottom:40px; } .services{ padding-bottom:110px; } }
+
+/* ============ SECTION 5: BEYOND THE SURFACE (video2) ============ */
+.surface{ padding:0 0 0; background:var(--ink); color:var(--on-dark); }
+.surface-inner{ position:relative; min-height:100vh; display:flex; align-items:center; overflow:hidden; }
+.surface-video{
+  position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center; opacity:.55;
+}
+.surface-scrim{ position:absolute; inset:0; background:linear-gradient(90deg, rgba(15,13,10,.92) 0%, rgba(15,13,10,.55) 45%, rgba(15,13,10,.2) 100%); }
+.surface-copy{ position:relative; z-index:2; max-width:560px; padding:130px 48px; }
+.surface-copy .eyebrow{ margin-bottom:24px; }
+.surface-copy h2{ color:var(--on-dark); font-size:clamp(38px,5vw,62px); margin-bottom:22px; }
+.surface-copy .sub{ font-size:14px; font-weight:700; letter-spacing:.12em; text-transform:uppercase; color:var(--bronze-light); margin-bottom:22px; }
+.surface-copy p{ color:rgba(246,240,228,.78); font-size:16.5px; max-width:440px; }
+@media (max-width:900px){
+  .surface-inner{ min-height:auto; flex-direction:column; }
+  .surface-video{ position:relative; height:78vh; opacity:1; }
+  .surface-scrim{ background:linear-gradient(180deg, rgba(15,13,10,0) 55%, rgba(15,13,10,.95) 100%); }
+  .surface-copy{ padding:40px 22px 70px; max-width:none; }
+}
+
+/* ============ SECTION 6: MATERIALS ============ */
+.materials{ padding:170px 0; }
+.materials-head{ text-align:center; margin-bottom:70px; }
+.materials-head h2{ font-size:clamp(34px,4.6vw,54px); }
+.materials-grid{ display:grid; grid-template-columns:1fr 1fr; gap:2px; background:var(--line); }
+.material-card{ background:var(--paper); padding:60px 48px; position:relative; overflow:hidden; min-height:320px; display:flex; flex-direction:column; justify-content:flex-end; }
+.material-texture{ position:absolute; inset:0; opacity:.9; }
+.material-card .mc-label{ position:relative; z-index:2; }
+.material-card h3{ font-size:30px; margin-bottom:14px; color:var(--on-dark); }
+.material-card p{ color:rgba(246,240,228,.85); max-width:340px; font-size:15px; }
+.material-card .index{ position:relative; z-index:2; font-family:var(--serif); font-size:13px; letter-spacing:.1em; color:var(--bronze-light); text-transform:uppercase; margin-bottom:60px; display:block; }
+@media (max-width:760px){ .materials{ padding:110px 0; } .materials-grid{ grid-template-columns:1fr; } .materials-head{ margin-bottom:44px; } }
+
+/* ============ SECTION 7: PROCESS ============ */
+.process{ padding:0 0 170px; }
+.process-head{ text-align:center; margin-bottom:80px; }
+.process-head h2{ font-size:clamp(34px,4.6vw,54px); }
+.process-line{ position:relative; display:grid; grid-template-columns:repeat(4,1fr); gap:0; }
+.process-line::before{ content:""; position:absolute; top:13px; left:0; right:0; height:1px; background:var(--line); }
+.process-step{ position:relative; padding:0 28px; text-align:left; }
+.process-step .dot{ width:26px; height:26px; border-radius:50%; background:var(--paper); border:1px solid var(--ink); display:flex; align-items:center; justify-content:center; font-size:10px; font-weight:800; margin-bottom:26px; position:relative; z-index:2; }
+.process-step.in .dot{ background:var(--wood); border-color:var(--wood); color:var(--paper); }
+.process-step h3{ font-size:19px; margin-bottom:10px; }
+.process-step p{ font-size:14px; }
+@media (max-width:860px){
+  .process{ padding-bottom:110px; }
+  .process-line{ grid-template-columns:1fr; gap:44px; }
+  .process-line::before{ left:13px; top:0; bottom:0; right:auto; width:1px; height:auto; }
+  .process-step{ padding-left:50px; }
+  .process-step .dot{ position:absolute; left:0; top:0; margin-bottom:0; }
+}
+
+
+/* ============ SECTION 8: WHY US ============ */
+.why{ padding:150px 0; background:var(--ink); color:var(--on-dark); }
+.why-head{ margin-bottom:70px; max-width:640px; }
+.why-head h2{ color:var(--on-dark); font-size:clamp(34px,4.6vw,54px); }
+.why-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:1px; background:rgba(246,240,228,0.12); }
+.why-card{ background:var(--ink); padding:38px 28px; }
+.why-card strong{ display:block; font-family:var(--serif); font-size:30px; color:var(--bronze-light); margin-bottom:14px; }
+.why-card span{ font-size:12px; letter-spacing:.1em; text-transform:uppercase; color:rgba(246,240,228,.75); font-weight:600; }
+@media (max-width:860px){ .why{ padding:110px 0; } .why-grid{ grid-template-columns:repeat(2,1fr); } }
+
+/* ============ SECTION 9: SERVICE AREA ============ */
+.area{ padding:150px 0; text-align:center; }
+.area .container{ max-width:640px; }
+.area h2{ font-size:clamp(32px,4.4vw,48px); margin-bottom:24px; }
+.area .loc{ font-size:14px; font-weight:800; letter-spacing:.16em; text-transform:uppercase; color:var(--wood); margin-bottom:26px; }
+.area p{ font-size:16px; }
+@media (max-width:760px){ .area{ padding:100px 0; } }
+
+/* ============ SECTION 10: CONTACT ============ */
+.contact{ padding:150px 0 130px; background:var(--paper-dim); text-align:center; border-top:1px solid var(--line); }
+.contact h2{ font-size:clamp(38px,5.4vw,64px); margin-bottom:18px; }
+.contact .sub{ font-size:16px; letter-spacing:.05em; text-transform:uppercase; font-weight:700; color:var(--wood); margin-bottom:46px; }
+.contact-actions{ display:flex; gap:18px; justify-content:center; flex-wrap:wrap; margin-bottom:56px; }
+.contact-phones{ display:flex; gap:40px; justify-content:center; flex-wrap:wrap; }
+.contact-phones a{ font-family:var(--serif); font-size:26px; border-bottom:1px solid var(--line); padding-bottom:4px; transition:border-color .3s ease, color .3s ease; }
+.contact-phones a:hover{ color:var(--wood); border-color:var(--wood); }
+@media (max-width:760px){ .contact{ padding:100px 0 100px; } .contact-actions{ flex-direction:column; align-items:stretch; } .contact-actions .btn{ justify-content:center; } }
+
+/* ============ FOOTER ============ */
+footer{ background:var(--ink); color:rgba(246,240,228,.75); padding:70px 0 30px; }
+.foot-grid{ display:grid; grid-template-columns:1.4fr 1fr 1fr; gap:50px; padding-bottom:50px; border-bottom:1px solid rgba(246,240,228,.12); }
+.foot-brand{ display:flex; align-items:flex-start; gap:14px; }
+.foot-brand img{ height:40px; }
+.foot-brand-text strong{ font-family:var(--serif); font-size:19px; color:var(--on-dark); display:block; }
+.foot-brand-text p{ font-size:13px; color:rgba(246,240,228,.6); margin-top:10px; max-width:220px; }
+.foot-col h4{ font-size:11.5px; letter-spacing:.16em; text-transform:uppercase; color:rgba(246,240,228,.5); margin-bottom:20px; font-weight:700; }
+.foot-col ul{ list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:13px; }
+.foot-col a{ font-size:14.5px; color:rgba(246,240,228,.82); transition:color .3s ease; }
+.foot-col a:hover{ color:var(--bronze-light); }
+.foot-bottom{ display:flex; justify-content:space-between; align-items:center; padding-top:26px; font-size:12px; color:rgba(246,240,228,.45); flex-wrap:wrap; gap:14px; }
+@media (max-width:800px){ .foot-grid{ grid-template-columns:1fr; gap:36px; } }
+
+/* ============ WHATSAPP FLOAT ============ */
+.wa-float{
+  position:fixed; right:26px; bottom:26px; z-index:180;
+  width:58px; height:58px; border-radius:50%; background:var(--ink); color:var(--paper);
+  display:flex; align-items:center; justify-content:center; box-shadow:0 10px 30px rgba(0,0,0,.28);
+  transition:transform .35s var(--ease), background .3s ease;
+}
+.wa-float:hover{ transform:scale(1.07); background:var(--wood-deep); }
+.wa-float svg{ width:26px; height:26px; }
+@media (max-width:768px){ .wa-float{ display:none; } }
+
+/* ============ MOBILE BOTTOM BAR ============ */
+.mobile-bar{
+  display:none; position:fixed; left:0; right:0; bottom:0; z-index:170;
+  background:var(--paper); border-top:1px solid var(--line); padding:10px 14px calc(10px + env(safe-area-inset-bottom));
+  grid-template-columns:1fr 1fr; gap:10px;
+}
+.mobile-bar a{
+  display:flex; align-items:center; justify-content:center; gap:8px; padding:13px; font-size:12px; font-weight:800; letter-spacing:.08em; text-transform:uppercase; border-radius:2px;
+}
+.mobile-bar a.call{ background:var(--paper-dim); color:var(--ink); border:1px solid var(--line); }
+.mobile-bar a.wa{ background:var(--ink); color:var(--paper); }
+.mobile-bar svg{ width:16px; height:16px; }
+@media (max-width:768px){ .mobile-bar{ display:grid; } body{ padding-bottom:70px; } }
+
+/* focus states */
+a:focus-visible, button:focus-visible{ outline:2px solid var(--bronze); outline-offset:3px; }
+</style>
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#top" class="brand" aria-label="Abi Wood Works — home">
+      <img src="assets/mark-only.png" alt="Abi Wood Works mark">
+      <span class="brand-word">ABI WOOD WORKS<small data-en="Craftsmanship since 25+ years" data-ta="25+ ஆண்டுகால கைவினை">Craftsmanship since 25+ years</small></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#top" data-en="Home" data-ta="முகப்பு">Home</a></li>
+      <li><a href="#craftsman" data-en="About" data-ta="எங்களை பற்றி">About</a></li>
+      <li><a href="#services" data-en="Services" data-ta="சேவைகள்">Services</a></li>
+      <li><a href="#process" data-en="Process" data-ta="செயல்முறை">Process</a></li>
+      <li><a href="#contact" data-en="Contact" data-ta="தொடர்பு">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="lang-toggle" id="langToggle" aria-label="Switch language">
+        <span data-lang-btn="en" class="active">EN</span>/<span data-lang-btn="ta">தமிழ்</span>
+      </button>
+      <a class="nav-whatsapp" id="waNav" href="#" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.29-1.39a9.9 9.9 0 0 0 4.7 1.2h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2zm5.8 14.05c-.24.68-1.4 1.3-1.93 1.38-.5.08-1.12.11-1.8-.11-.42-.13-.95-.31-1.64-.6-2.88-1.24-4.76-4.13-4.9-4.32-.14-.19-1.17-1.56-1.17-2.98 0-1.42.74-2.11 1-2.4.26-.29.57-.36.76-.36.19 0 .38 0 .55.01.18.01.41-.07.64.49.24.58.81 2 .88 2.14.07.14.12.31.02.5-.1.19-.15.31-.29.48-.14.17-.3.37-.43.5-.14.14-.29.29-.12.57.17.28.75 1.24 1.62 2 1.11.99 2.05 1.3 2.33 1.44.28.14.44.12.6-.07.17-.19.71-.83.9-1.11.19-.29.38-.24.63-.14.26.1 1.65.78 1.93.92.28.14.47.21.54.33.07.12.07.68-.17 1.36z"/></svg>
+        <span data-en="WhatsApp Us" data-ta="வாட்ஸ்அப்">WhatsApp Us</span>
+      </a>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-menu-close" id="menuClose" aria-label="Close menu">&times;</button>
+  <ul>
+    <li><a href="#top" class="mm-link" data-en="Home" data-ta="முகப்பு">Home</a></li>
+    <li><a href="#craftsman" class="mm-link" data-en="About" data-ta="எங்களை பற்றி">About</a></li>
+    <li><a href="#services" class="mm-link" data-en="Services" data-ta="சேவைகள்">Services</a></li>
+    <li><a href="#process" class="mm-link" data-en="Process" data-ta="செயல்முறை">Process</a></li>
+    <li><a href="#contact" class="mm-link" data-en="Contact" data-ta="தொடர்பு">Contact</a></li>
+  </ul>
+  <div class="mobile-menu-foot">
+    <span>9865707774</span>
+    <span data-en="EN / தமிழ்" data-ta="EN / தமிழ்">EN / தமிழ்</span>
+  </div>
+</div>
+
+<!-- ============ HERO ============ -->
+<header class="hero" id="top">
+  <div class="hero-grid">
+    <div class="hero-copy reveal in">
+      <span class="eyebrow">ABI WOOD WORKS</span>
+      <h1 data-en="Every detail matters." data-ta="ஒவ்வொரு விவரமும் முக்கியம்.">Every detail<br>matters.</h1>
+      <p class="lead" data-en="25+ years of experience crafting wooden doors, furniture and custom woodwork." data-ta="மரக் கதவுகள், மரச்சாமான்கள் மற்றும் தனிப்பயன் மரவேலைகளை வடிவமைப்பதில் 25+ ஆண்டுகால அனுபவம்.">25+ years of experience crafting wooden doors, furniture and custom woodwork.</p>
+      <div class="hero-exp" data-en="25+ Years of Craftsmanship" data-ta="25+ ஆண்டுகால கைவினை அனுபவம்">25+ Years of Craftsmanship</div>
+      <div class="hero-actions">
+        <a class="btn btn-primary" id="waHero" href="#" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.29-1.39a9.9 9.9 0 0 0 4.7 1.2h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2zm5.8 14.05c-.24.68-1.4 1.3-1.93 1.38-.5.08-1.12.11-1.8-.11-.42-.13-.95-.31-1.64-.6-2.88-1.24-4.76-4.13-4.9-4.32-.14-.19-1.17-1.56-1.17-2.98 0-1.42.74-2.11 1-2.4.26-.29.57-.36.76-.36.19 0 .38 0 .55.01.18.01.41-.07.64.49.24.58.81 2 .88 2.14.07.14.12.31.02.5-.1.19-.15.31-.29.48-.14.17-.3.37-.43.5-.14.14-.29.29-.12.57.17.28.75 1.24 1.62 2 1.11.99 2.05 1.3 2.33 1.44.28.14.44.12.6-.07.17-.19.71-.83.9-1.11.19-.29.38-.24.63-.14.26.1 1.65.78 1.93.92.28.14.47.21.54.33.07.12.07.68-.17 1.36z"/></svg>
+          <span data-en="WhatsApp Us" data-ta="வாட்ஸ்அப் செய்யுங்கள்">WhatsApp Us</span>
+        </a>
+      </div>
+    </div>
+    <div class="hero-video-order">
+      <div class="hero-video-wrap reveal in">
+        <img class="poster" id="heroPoster" src="assets/poster-explode.jpg" alt="Abi Wood Works crafted wooden door, exploded detail view">
+        <video id="heroVideo" muted playsinline loop preload="none" poster="assets/poster-explode.jpg" aria-label="Wooden door exploded-view craftsmanship reel">
+          <source src="assets/door-explode.mp4" type="video/mp4">
+        </video>
+        <div class="hero-video-caption" data-en="Custom Teak Door — Detail Study" data-ta="தனிப்பயன் தேக்கு கதவு — விவர ஆய்வு">Custom Teak Door — Detail Study</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ============ SECTION 2: THE IDEA ============ -->
+<section class="idea">
+  <div class="container">
+    <div class="seam reveal" data-observe></div>
+    <h2 class="reveal" data-observe data-en="Every detail matters." data-ta="ஒவ்வொரு விவரமும் முக்கியம்.">Every detail matters.</h2>
+    <p class="lead-quote reveal reveal-delay-1" data-observe data-en="“A finished piece may look simple. The craft behind it is anything but.” Every door, table and cabinet that leaves the workshop carries twenty-five years of small decisions — the grain chosen, the joint fitted, the finish rubbed by hand." data-ta="“முடிக்கப்பட்ட ஒரு பொருள் எளிமையாகத் தெரியலாம். ஆனால் அதன் பின்னணியிலுள்ள கைவினை அப்படியல்ல.” பட்டறையிலிருந்து வெளியேறும் ஒவ்வொரு கதவும், மேசையும், அலமாரியும் இருபத்தைந்து ஆண்டுகால சிறிய முடிவுகளைச் சுமக்கின்றன — தேர்ந்தெடுக்கப்பட்ட மரத்தன்மை, பொருத்தப்பட்ட இணைப்பு, கையால் தேய்க்கப்பட்ட மெருகு.">“A finished piece may look simple. The craft behind it is anything but.” Every door, table and cabinet that leaves the workshop carries twenty-five years of small decisions — the grain chosen, the joint fitted, the finish rubbed by hand.</p>
+  </div>
+</section>
+
+<!-- ============ SECTION 3: THE CRAFTSMAN ============ -->
+<section class="craftsman" id="craftsman">
+  <div class="container">
+    <div class="craftsman-grid">
+      <div class="craftsman-portrait reveal" data-observe>
+        <img class="mark" src="assets/logo-trans-crop.png" alt="Portrait placeholder — photograph of Muthu Kumar to be added">
+        <div class="cap" data-en="Photograph coming soon" data-ta="புகைப்படம் விரைவில்">Photograph coming soon</div>
+      </div>
+      <div class="craftsman-copy reveal reveal-delay-1" data-observe>
+        <span class="eyebrow" data-en="THE CRAFTSMAN" data-ta="கைவினைஞர்">THE CRAFTSMAN</span>
+        <h2 data-en="Muthu Kumar" data-ta="முத்து குமார்">Muthu Kumar</h2>
+        <span class="role" data-en="Master Carpenter — 25+ Years of Experience" data-ta="மாஸ்டர் தச்சர் — 25+ ஆண்டுகால அனுபவம்">Master Carpenter — 25+ Years of Experience</span>
+        <p data-en="For more than 25 years, Muthu Kumar has worked with wood to create custom doors, furniture and practical interior woodwork, with attention to detail, durability and craftsmanship." data-ta="25 ஆண்டுகளுக்கும் மேலாக, முத்து குமார் மரத்துடன் பணியாற்றி, தனிப்பயன் கதவுகள், மரச்சாமான்கள் மற்றும் நடைமுறை உள்துறை மரவேலைகளை உருவாக்கி வருகிறார், விவரம், நீடித்து நிலைத்தன்மை மற்றும் கைவினைத்திறனில் கவனம் செலுத்துகிறார்.">For more than 25 years, Muthu Kumar has worked with wood to create custom doors, furniture and practical interior woodwork, with attention to detail, durability and craftsmanship.</p>
+        <div class="craftsman-stats">
+          <div><strong>25+</strong><span data-en="Years Experience" data-ta="ஆண்டுகள் அனுபவம்">Years Experience</span></div>
+          <div><strong>2</strong><span data-en="Languages Spoken" data-ta="பேசும் மொழிகள்">Languages Spoken</span></div>
+          <div><strong>1:1</strong><span data-en="Direct Contact" data-ta="நேரடி தொடர்பு">Direct Contact</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SECTION 4: SERVICES ============ -->
+<section class="services" id="services">
+  <div class="container">
+    <div class="services-head reveal" data-observe>
+      <h2 data-en="What we craft" data-ta="நாங்கள் என்ன செய்கிறோம்">What we craft</h2>
+      <p data-en="Six areas of woodwork, each built around the requirements of your space." data-ta="ஆறு மரவேலைத் துறைகள், ஒவ்வொன்றும் உங்கள் இடத்தின் தேவைகளுக்கு ஏற்ப உருவாக்கப்படுகின்றன.">Six areas of woodwork, each built around the requirements of your space.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card reveal" data-observe>
+        <span class="service-num">01</span>
+        <div>
+          <h3 data-en="Custom Wooden Doors" data-ta="தனிப்பயன் மரக் கதவுகள்">Custom Wooden Doors</h3>
+          <p data-en="Custom doors designed around the character and requirements of each space." data-ta="ஒவ்வொரு இடத்தின் தன்மைக்கும் தேவைக்கும் ஏற்ப வடிவமைக்கப்பட்ட தனிப்பயன் கதவுகள்.">Custom doors designed around the character and requirements of each space.</p>
+        </div>
+      </div>
+      <div class="service-card reveal" data-observe>
+        <span class="service-num">02</span>
+        <div>
+          <h3 data-en="Tables &amp; Chairs" data-ta="மேசைகள் &amp; நாற்காலிகள்">Tables &amp; Chairs</h3>
+          <p data-en="Functional wooden furniture crafted for everyday use." data-ta="அன்றாட பயன்பாட்டிற்காக வடிவமைக்கப்பட்ட செயல்பாட்டு மரச்சாமான்கள்.">Functional wooden furniture crafted for everyday use.</p>
+        </div>
+      </div>
+      <div class="service-card reveal" data-observe>
+        <span class="service-num">03</span>
+        <div>
+          <h3 data-en="Beds" data-ta="கட்டில்கள்">Beds</h3>
+          <p data-en="Strong, practical and custom-built wooden beds." data-ta="வலிமையான, நடைமுறைக்குரிய மற்றும் தனிப்பயனாக்கப்பட்ட மரக் கட்டில்கள்.">Strong, practical and custom-built wooden beds.</p>
+        </div>
+      </div>
+      <div class="service-card reveal" data-observe>
+        <span class="service-num">04</span>
+        <div>
+          <h3 data-en="Wardrobes" data-ta="அலமாரிகள்">Wardrobes</h3>
+          <p data-en="Storage solutions designed around the available space." data-ta="கிடைக்கும் இடத்திற்கு ஏற்ப வடிவமைக்கப்பட்ட சேமிப்பு தீர்வுகள்.">Storage solutions designed around the available space.</p>
+        </div>
+      </div>
+      <div class="service-card reveal" data-observe>
+        <span class="service-num">05</span>
+        <div>
+          <h3 data-en="Kitchen Cabinets" data-ta="சமையலறை அலமாரிகள்">Kitchen Cabinets</h3>
+          <p data-en="Custom kitchen cabinetry and practical woodwork." data-ta="தனிப்பயன் சமையலறை அலமாரிகள் மற்றும் நடைமுறை மரவேலை.">Custom kitchen cabinetry and practical woodwork.</p>
+        </div>
+      </div>
+      <div class="service-card reveal" data-observe>
+        <span class="service-num">06</span>
+        <div>
+          <h3 data-en="Furniture Repair" data-ta="மரச்சாமான் பழுதுபார்ப்பு">Furniture Repair</h3>
+          <p data-en="Repair and restoration of wooden furniture." data-ta="மரச்சாமான்களின் பழுதுபார்ப்பு மற்றும் புனரமைப்பு.">Repair and restoration of wooden furniture.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SECTION 5: BEYOND THE SURFACE ============ -->
+<section class="surface">
+  <div class="surface-inner">
+    <video class="surface-video" id="surfaceVideo" muted playsinline loop preload="none" poster="assets/poster-assemble.jpg" aria-label="Wooden door component assembly detail reel">
+      <source data-src="assets/door-assemble.mp4" type="video/mp4">
+    </video>
+    <div class="surface-scrim"></div>
+    <div class="surface-copy reveal" data-observe>
+      <span class="eyebrow on-dark" data-en="THE CONSTRUCTION" data-ta="கட்டுமானம்">THE CONSTRUCTION</span>
+      <h2 data-en="Beyond the surface." data-ta="மேற்பரப்புக்கு அப்பால்.">Beyond the surface.</h2>
+      <div class="sub" data-en="See what goes into every detail." data-ta="ஒவ்வொரு விவரத்திலும் என்ன இருக்கிறது என்பதைப் பாருங்கள்.">See what goes into every detail.</div>
+      <p data-en="A finished door is only what you see. Precision lives in every component, joint and finish." data-ta="முடிக்கப்பட்ட கதவு நீங்கள் பார்ப்பது மட்டுமே. துல்லியம் ஒவ்வொரு பாகத்திலும், இணைப்பிலும், மெருகிலும் வாழ்கிறது.">A finished door is only what you see. Precision lives in every component, joint and finish.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SECTION 6: MATERIALS ============ -->
+<section class="materials">
+  <div class="container">
+    <div class="materials-head reveal" data-observe>
+      <span class="eyebrow" data-en="MATERIALS" data-ta="மரப்பொருட்கள்">MATERIALS</span>
+      <h2 data-en="The right material matters." data-ta="சரியான மரப்பொருள் முக்கியம்.">The right material matters.</h2>
+    </div>
+    <div class="materials-grid">
+      <div class="material-card reveal" data-observe style="background:linear-gradient(160deg,#6E4429,#3E2916);">
+        <span class="index">01</span>
+        <div class="mc-label">
+          <h3 data-en="Teak" data-ta="தேக்கு">Teak</h3>
+          <p data-en="Known for its strength, durability and timeless natural character." data-ta="வலிமை, நீடித்து நிலைத்தன்மை மற்றும் காலமற்ற இயற்கை தன்மைக்குப் பெயர் பெற்றது.">Known for its strength, durability and timeless natural character.</p>
+        </div>
+      </div>
+      <div class="material-card reveal reveal-delay-1" data-observe style="background:linear-gradient(160deg,#8C6A44,#4A2E1B);">
+        <span class="index">02</span>
+        <div class="mc-label">
+          <h3 data-en="Plywood" data-ta="பிளைவுட்">Plywood</h3>
+          <p data-en="A versatile and practical material for custom furniture and interior applications." data-ta="தனிப்பயன் மரச்சாமான்கள் மற்றும் உள்துறை பயன்பாடுகளுக்கான பல்துறை மற்றும் நடைமுறைப் பொருள்.">A versatile and practical material for custom furniture and interior applications.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SECTION 7: PROCESS ============ -->
+<section class="process" id="process">
+  <div class="container">
+    <div class="process-head reveal" data-observe>
+      <span class="eyebrow" data-en="HOW WE WORK" data-ta="நாங்கள் எப்படி வேலை செய்கிறோம்">HOW WE WORK</span>
+      <h2 data-en="From idea to finish." data-ta="யோசனையிலிருந்து முடிவுவரை.">From idea to finish.</h2>
+    </div>
+    <div class="process-line">
+      <div class="process-step reveal" data-observe><span class="dot">01</span>
+        <h3 data-en="Discuss" data-ta="விவாதிக்கவும்">Discuss</h3>
+        <p data-en="Understand the customer's needs and vision." data-ta="வாடிக்கையாளரின் தேவைகளையும் பார்வையையும் புரிந்துகொள்ளுதல்.">Understand the customer's needs and vision.</p>
+      </div>
+      <div class="process-step reveal reveal-delay-1" data-observe><span class="dot">02</span>
+        <h3 data-en="Measure" data-ta="அளவிடவும்">Measure</h3>
+        <p data-en="Understand the space and dimensions." data-ta="இடத்தையும் அளவுகளையும் புரிந்துகொள்ளுதல்.">Understand the space and dimensions.</p>
+      </div>
+      <div class="process-step reveal reveal-delay-2" data-observe><span class="dot">03</span>
+        <h3 data-en="Craft" data-ta="வடிவமைக்கவும்">Craft</h3>
+        <p data-en="Build the piece carefully." data-ta="பொருளை கவனமாக உருவாக்குதல்.">Build the piece carefully.</p>
+      </div>
+      <div class="process-step reveal reveal-delay-3" data-observe><span class="dot">04</span>
+        <h3 data-en="Install" data-ta="நிறுவவும்">Install</h3>
+        <p data-en="Complete the work at the customer's location." data-ta="வாடிக்கையாளர் இடத்தில் வேலையை முடித்தல்.">Complete the work at the customer's location.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SECTION 8: WHY US ============ -->
+<section class="why">
+  <div class="container">
+    <div class="why-head reveal" data-observe>
+      <span class="eyebrow on-dark" data-en="WHY ABI WOOD WORKS" data-ta="ஏன் ABI WOOD WORKS">WHY ABI WOOD WORKS</span>
+      <h2 data-en="Twenty-five years of decisions made in your favour." data-ta="உங்களுக்கு சாதகமாக எடுக்கப்பட்ட இருபத்தைந்து ஆண்டுகால முடிவுகள்.">Twenty-five years of decisions made in your favour.</h2>
+    </div>
+    <div class="why-grid">
+      <div class="why-card reveal" data-observe><strong>25+</strong><span data-en="Years of Experience" data-ta="ஆண்டுகால அனுபவம்">Years of Experience</span></div>
+      <div class="why-card reveal reveal-delay-1" data-observe><strong data-en="Custom" data-ta="தனிப்பயன்">Custom</strong><span data-en="Crafted to Requirement" data-ta="தேவைக்கேற்ப வடிவமைக்கப்பட்டது">Crafted to Requirement</span></div>
+      <div class="why-card reveal reveal-delay-2" data-observe><strong data-en="Quality" data-ta="தரம்">Quality</strong><span data-en="Teak &amp; Plywood" data-ta="தேக்கு &amp; பிளைவுட்">Teak &amp; Plywood</span></div>
+      <div class="why-card reveal reveal-delay-3" data-observe><strong data-en="Personal" data-ta="நேரடி">Personal</strong><span data-en="Direct Contact with the Craftsman" data-ta="கைவினைஞருடன் நேரடி தொடர்பு">Direct Contact with the Craftsman</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SECTION 9: SERVICE AREA ============ -->
+<section class="area">
+  <div class="container">
+    <span class="eyebrow reveal" data-observe data-en="SERVICE AREA" data-ta="சேவை பகுதி">SERVICE AREA</span>
+    <h2 class="reveal reveal-delay-1" data-observe data-en="Crafted for your space." data-ta="உங்கள் இடத்திற்காக வடிவமைக்கப்பட்டது.">Crafted for your space.</h2>
+    <div class="loc reveal reveal-delay-1" data-observe>Vellalore, Tamil Nadu, India</div>
+    <p class="reveal reveal-delay-2" data-observe data-en="Custom carpentry work designed around your space and requirements. Contact us to discuss your project." data-ta="உங்கள் இடத்திற்கும் தேவைகளுக்கும் ஏற்ப வடிவமைக்கப்பட்ட தனிப்பயன் தச்சு வேலை. உங்கள் திட்டத்தைப் பற்றி விவாதிக்க எங்களை தொடர்பு கொள்ளுங்கள்.">Custom carpentry work designed around your space and requirements. Contact us to discuss your project.</p>
+  </div>
+</section>
+
+<!-- ============ SECTION 10: CONTACT ============ -->
+<section class="contact" id="contact">
+  <div class="container">
+    <h2 data-en="Have a project in mind?" data-ta="உங்கள் மனதில் ஒரு மரவேலை திட்டம் உள்ளதா?">Have a project in mind?</h2>
+    <div class="sub" data-en="Let's build something made to last." data-ta="நீடித்திருக்கும் ஒன்றை உருவாக்குவோம்.">Let's build something made to last.</div>
+    <div class="contact-actions">
+      <a class="btn btn-primary" href="tel:9865707774">
+        <span data-en="Call Now" data-ta="இப்போது அழைக்கவும்">Call Now</span>
+      </a>
+      <a class="btn btn-outline" id="waContact" href="#" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.29-1.39a9.9 9.9 0 0 0 4.7 1.2h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2zm5.8 14.05c-.24.68-1.4 1.3-1.93 1.38-.5.08-1.12.11-1.8-.11-.42-.13-.95-.31-1.64-.6-2.88-1.24-4.76-4.13-4.9-4.32-.14-.19-1.17-1.56-1.17-2.98 0-1.42.74-2.11 1-2.4.26-.29.57-.36.76-.36.19 0 .38 0 .55.01.18.01.41-.07.64.49.24.58.81 2 .88 2.14.07.14.12.31.02.5-.1.19-.15.31-.29.48-.14.17-.3.37-.43.5-.14.14-.29.29-.12.57.17.28.75 1.24 1.62 2 1.11.99 2.05 1.3 2.33 1.44.28.14.44.12.6-.07.17-.19.71-.83.9-1.11.19-.29.38-.24.63-.14.26.1 1.65.78 1.93.92.28.14.47.21.54.33.07.12.07.68-.17 1.36z"/></svg>
+        <span data-en="WhatsApp Us" data-ta="வாட்ஸ்அப் செய்யுங்கள்">WhatsApp Us</span>
+      </a>
+    </div>
+    <div class="contact-phones">
+      <a href="tel:9865707774">9865707774</a>
+      <a href="tel:9865707776">9865707776</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <img src="assets/logo-white-crop.png" alt="Abi Wood Works logo">
+        <div class="foot-brand-text">
+          <strong>ABI WOOD WORKS</strong>
+          <p data-en="Custom Carpentry &amp; Furniture — 25+ Years of Craftsmanship. Vellalore, Tamil Nadu." data-ta="தனிப்பயன் தச்சு &amp; மரச்சாமான்கள் — 25+ ஆண்டுகால கைவினை. வெள்ளலூர், தமிழ்நாடு.">Custom Carpentry &amp; Furniture — 25+ Years of Craftsmanship. Vellalore, Tamil Nadu.</p>
+        </div>
+      </div>
+      <div class="foot-col">
+        <h4 data-en="Navigate" data-ta="வழிசெலுத்தல்">Navigate</h4>
+        <ul>
+          <li><a href="#top" data-en="Home" data-ta="முகப்பு">Home</a></li>
+          <li><a href="#craftsman" data-en="About" data-ta="எங்களை பற்றி">About</a></li>
+          <li><a href="#services" data-en="Services" data-ta="சேவைகள்">Services</a></li>
+          <li><a href="#process" data-en="Process" data-ta="செயல்முறை">Process</a></li>
+          <li><a href="#contact" data-en="Contact" data-ta="தொடர்பு">Contact</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4 data-en="Contact" data-ta="தொடர்பு">Contact</h4>
+        <ul>
+          <li><a href="tel:9865707774">9865707774</a></li>
+          <li><a href="tel:9865707776">9865707776</a></li>
+          <li><a id="waFooter" href="#" target="_blank" rel="noopener" data-en="WhatsApp" data-ta="வாட்ஸ்அப்">WhatsApp</a></li>
+          <li><span data-en="Vellalore, Tamil Nadu" data-ta="வெள்ளலூர், தமிழ்நாடு">Vellalore, Tamil Nadu</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>&copy; <span id="year"></span> Abi Wood Works</span>
+      <button class="lang-toggle" id="langToggleFoot" style="color:rgba(246,240,228,.75);">
+        <span data-lang-btn="en" class="active">EN</span>/<span data-lang-btn="ta">தமிழ்</span>
+      </button>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ FLOATING WHATSAPP ============ -->
+<a class="wa-float" id="waFloat" href="#" target="_blank" rel="noopener" aria-label="Message us on WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.29-1.39a9.9 9.9 0 0 0 4.7 1.2h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2zm5.8 14.05c-.24.68-1.4 1.3-1.93 1.38-.5.08-1.12.11-1.8-.11-.42-.13-.95-.31-1.64-.6-2.88-1.24-4.76-4.13-4.9-4.32-.14-.19-1.17-1.56-1.17-2.98 0-1.42.74-2.11 1-2.4.26-.29.57-.36.76-.36.19 0 .38 0 .55.01.18.01.41-.07.64.49.24.58.81 2 .88 2.14.07.14.12.31.02.5-.1.19-.15.31-.29.48-.14.17-.3.37-.43.5-.14.14-.29.29-.12.57.17.28.75 1.24 1.62 2 1.11.99 2.05 1.3 2.33 1.44.28.14.44.12.6-.07.17-.19.71-.83.9-1.11.19-.29.38-.24.63-.14.26.1 1.65.78 1.93.92.28.14.47.21.54.33.07.12.07.68-.17 1.36z"/></svg>
+</a>
+
+<!-- ============ MOBILE BOTTOM BAR ============ -->
+<div class="mobile-bar">
+  <a class="call" href="tel:9865707774">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    <span data-en="Call" data-ta="அழைக்க">Call</span>
+  </a>
+  <a class="wa" id="waBar" href="#" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.29-1.39a9.9 9.9 0 0 0 4.7 1.2h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2zm5.8 14.05c-.24.68-1.4 1.3-1.93 1.38-.5.08-1.12.11-1.8-.11-.42-.13-.95-.31-1.64-.6-2.88-1.24-4.76-4.13-4.9-4.32-.14-.19-1.17-1.56-1.17-2.98 0-1.42.74-2.11 1-2.4.26-.29.57-.36.76-.36.19 0 .38 0 .55.01.18.01.41-.07.64.49.24.58.81 2 .88 2.14.07.14.12.31.02.5-.1.19-.15.31-.29.48-.14.17-.3.37-.43.5-.14.14-.29.29-.12.57.17.28.75 1.24 1.62 2 1.11.99 2.05 1.3 2.33 1.44.28.14.44.12.6-.07.17-.19.71-.83.9-1.11.19-.29.38-.24.63-.14.26.1 1.65.78 1.93.92.28.14.47.21.54.33.07.12.07.68-.17 1.36z"/></svg>
+    <span data-en="WhatsApp" data-ta="வாட்ஸ்அப்">WhatsApp</span>
+  </a>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  /* ---------- Data: business info kept in one place ---------- */
+  var business = {
+    whatsappNumber: "919865707774",
+    whatsappMessage: "Vanakkam, I would like to enquire about carpentry work from Abi Wood Works."
+  };
+  var waLink = "https://wa.me/" + business.whatsappNumber + "?text=" + encodeURIComponent(business.whatsappMessage);
+  ["waNav","waHero","waContact","waFooter","waFloat","waBar"].forEach(function(id){
+    var el = document.getElementById(id);
+    if(el) el.setAttribute("href", waLink);
+  });
+
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+  /* ---------- Nav scroll state ---------- */
+  var nav = document.getElementById("nav");
+  function onScroll(){
+    if(window.scrollY > 40) nav.classList.add("solid");
+    else nav.classList.remove("solid");
+  }
+  onScroll();
+  window.addEventListener("scroll", onScroll, {passive:true});
+
+  /* ---------- Mobile menu ---------- */
+  var menuBtn = document.getElementById("menuBtn");
+  var menuClose = document.getElementById("menuClose");
+  var mobileMenu = document.getElementById("mobileMenu");
+  function openMenu(){ mobileMenu.classList.add("open"); menuBtn.setAttribute("aria-expanded","true"); document.body.style.overflow="hidden"; }
+  function closeMenu(){ mobileMenu.classList.remove("open"); menuBtn.setAttribute("aria-expanded","false"); document.body.style.overflow=""; }
+  menuBtn.addEventListener("click", openMenu);
+  menuClose.addEventListener("click", closeMenu);
+  document.querySelectorAll(".mm-link").forEach(function(a){ a.addEventListener("click", closeMenu); });
+
+  /* ---------- Language toggle (EN / TA) ---------- */
+  var currentLang = "en";
+  function setLang(lang){
+    currentLang = lang;
+    document.documentElement.setAttribute("data-lang", lang);
+    document.querySelectorAll("[data-en]").forEach(function(el){
+      var val = el.getAttribute(lang === "ta" ? "data-ta" : "data-en");
+      if(val !== null) el.innerHTML = val;
+    });
+    document.querySelectorAll("[data-lang-btn]").forEach(function(el){
+      el.classList.toggle("active", el.getAttribute("data-lang-btn") === lang);
+    });
+  }
+  function bindToggle(btn){
+    if(!btn) return;
+    btn.addEventListener("click", function(){ setLang(currentLang === "en" ? "ta" : "en"); });
+  }
+  bindToggle(document.getElementById("langToggle"));
+  bindToggle(document.getElementById("langToggleFoot"));
+
+  /* ---------- Scroll reveal ---------- */
+  var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if(reduceMotion){
+    document.querySelectorAll(".reveal, .seam").forEach(function(el){ el.classList.add("in"); });
+  } else {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if(entry.isIntersecting){
+          entry.target.classList.add("in");
+          io.unobserve(entry.target);
+        }
+      });
+    }, {threshold:0.18, rootMargin:"0px 0px -60px 0px"});
+    document.querySelectorAll("[data-observe]").forEach(function(el){ io.observe(el); });
+  }
+
+  /* process step dots activate as they enter */
+  var stepIO = new IntersectionObserver(function(entries){
+    entries.forEach(function(entry){
+      if(entry.isIntersecting){ entry.target.classList.add("in"); }
+    });
+  }, {threshold:0.5});
+  document.querySelectorAll(".process-step").forEach(function(el){ stepIO.observe(el); });
+
+  /* ---------- Hero video: load + play when ready, graceful fallback ---------- */
+  var heroVideo = document.getElementById("heroVideo");
+  var heroPoster = document.getElementById("heroPoster");
+  if(!reduceMotion){
+    heroVideo.src = "assets/door-explode.mp4";
+    heroVideo.load();
+    var tryPlay = function(){
+      heroVideo.play().then(function(){
+        heroPoster.style.display = "none";
+      }).catch(function(){ /* autoplay blocked — poster remains visible */ });
+    };
+    if(heroVideo.readyState >= 2) tryPlay();
+    else heroVideo.addEventListener("canplay", tryPlay, {once:true});
+  }
+
+  /* ---------- Second video: lazy-load as it approaches viewport ---------- */
+  var surfaceVideo = document.getElementById("surfaceVideo");
+  var lazyIO = new IntersectionObserver(function(entries){
+    entries.forEach(function(entry){
+      if(entry.isIntersecting){
+        var src = surfaceVideo.querySelector("source").getAttribute("data-src");
+        if(src && !surfaceVideo.getAttribute("src")){
+          surfaceVideo.querySelector("source").setAttribute("src", src);
+          surfaceVideo.load();
+          if(!reduceMotion) surfaceVideo.play().catch(function(){});
+        }
+        lazyIO.unobserve(surfaceVideo);
+      }
+    });
+  }, {rootMargin:"400px 0px 400px 0px"});
+  lazyIO.observe(surfaceVideo);
+
+  /* ---------- Portfolio placeholder gallery ---------- */
+  var categories = [
+    {cat:"doors", en:"Custom Door", ta:"தனிப்பயன் கதவு"},
+    {cat:"furniture", en:"Table & Chairs", ta:"மேசை & நாற்காலி"},
+    {cat:"wardrobes", en:"Wardrobe", ta:"அலமாரி"},
+    {cat:"kitchens", en:"Kitchen Cabinet", ta:"சமையலறை அலமாரி"},
+    {cat:"interiors", en:"Interior Woodwork", ta:"உள்துறை மரவேலை"},
+    {cat:"repair", en:"Furniture Repair", ta:"பழுதுபார்ப்பு"},
+    {cat:"doors", en:"Custom Door", ta:"தனிப்பயன் கதவு"},
+    {cat:"furniture", en:"Bed", ta:"கட்டில்"},
+    {cat:"wardrobes", en:"Wardrobe", ta:"அலமாரி"}
+  ];
+  var grid = document.getElementById("workGrid");
+  categories.forEach(function(item, i){
+    var div = document.createElement("div");
+    div.className = "work-item reveal";
+    div.setAttribute("data-observe","");
+    div.setAttribute("data-category", item.cat);
+    div.style.transitionDelay = (i % 3) * 0.08 + "s";
+    div.innerHTML =
+      '<img class="mark" src="assets/mark-only.png" alt="Placeholder — photo of this project to be added">' +
+      '<span class="soon" data-en="Photo coming soon" data-ta="புகைப்படம் விரைவில்">Photo coming soon</span>' +
+      '<span class="tag" data-en="' + item.en + '" data-ta="' + item.ta + '">' + item.en + '</span>';
+    grid.appendChild(div);
+  });
+  // reveal-observe dynamically added portfolio items
+  if(reduceMotion){ document.querySelectorAll(".work-item").forEach(function(el){ el.classList.add("in"); }); }
+  else {
+    var io2 = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){ if(entry.isIntersecting){ entry.target.classList.add("in"); io2.unobserve(entry.target);} });
+    }, {threshold:0.15});
+    document.querySelectorAll(".work-item").forEach(function(el){ io2.observe(el); });
+  }
+  // apply current language to newly injected items
+  setLang(currentLang);
+
+  var filterBtns = document.querySelectorAll(".filter-btn");
+  filterBtns.forEach(function(btn){
+    btn.addEventListener("click", function(){
+      filterBtns.forEach(function(b){ b.classList.remove("active"); });
+      btn.classList.add("active");
+      var f = btn.getAttribute("data-filter");
+      document.querySelectorAll(".work-item").forEach(function(item){
+        var show = (f === "all" || item.getAttribute("data-category") === f);
+        item.classList.toggle("hide", !show);
+      });
+    });
+  });
+
+})();
+</script>
+
+</body>
+</html>
